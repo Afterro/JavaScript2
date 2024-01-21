@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Zadanie 32</title>
+
+    <script type="text/javascript">
+        function monitor(marka, odswiezanie, model) {
+            this.marka = marka;
+            this.odswiezanie = odswiezanie;
+            this.model = model;
+        }
+
+        monitor.prototype.wypisz = function () {
+            alert(this.marka + ' ' + this.odswiezanie + ' ' + this.model);
+        };
+
+        var monitor1 = new monitor("ASUS", "144hz", "VG248");
+        var monitor2 = new monitor('Samsung', '60hz', 'SyncMaster');
+        monitor1.wypisz();
+        monitor2.wypisz();
+        document.write("dostęp do właściwości" + "<br>");
+        document.write("Monitor pierwszy " + "Marka: " + monitor1.marka + " " + "Odswiezanie: " + monitor1.odswiezanie + " " + "Model: " + monitor1.model + "<br>");
+        document.write("Monitor drugi " + " Marka: " + monitor2.marka + " " + "Odswiezanie: " + monitor2.odswiezanie + " " + "Model: " + monitor2.model);
+    </script>
+</head>
+
+<body>
+    <pre>
+        <code>
+<strong>Kod strony:</strong>
+&lt;script&gt;
+function monitor(marka, odswiezanie, model) {
+    this.marka = marka;
+    this.odswiezanie = odswiezanie;
+    this.model = model;
+}
+monitor.prototype.wypisz = function ()
+{
+    alert(this.marka + ' ' + this.odswiezanie + ' ' + this.model);
+};
+var monitor1 = new monitor("ASUS", "144hz", "VG248");
+var monitor2 = new monitor('Samsung', '60hz', 'SyncMaster');
+monitor1.wypisz();
+monitor2.wypisz();
+document.write("dostęp do właściwości" + "<br>");
+document.write("Monitor pierwszy " + "Marka: " + monitor1.marka + " " + "Odswiezanie: " + monitor1.odswiezanie + " " + "Model: " + monitor1.model + "&lt;br&gt;");
+document.write("Monitor drugi " + " Marka: " + monitor2.marka + " " + "Odswiezanie: " + monitor2.odswiezanie + " " + "Model: " + monitor2.model);
+&lt;/script&gt;
+    </code>
+    </pre>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Zadanie 31</title>
+</head>
+
+<script type="text/javascript">
+    var monitor = {
+        model: 'VG248',
+        odswiezanie: 144,
+        rozdzielczosc: '1920x1080',
+        wyswietl_szymichowski: function () {
+            document.write(this.model + ' ' + this.rozdzielczosc)
+        }
+    }
+    monitor.wyswietl_szymichowski();
+    monitor.marka = "ASUS";
+    monitor.wypisz = function () {
+        alert("Marka: " + this.marka)
+    }
+    monitor.wypisz();
+</script>
+
+<body>
+    <br><br><br><br><br>
+    <pre>
+<code>
+<strong>Kod strony:</strong>
+&lt;script&gt;
+var monitor = {
+    model: 'VG248',
+    odswiezanie: 144,
+    rozdzielczosc: '1920x1080',
+    wyswietl_szymichowski: function () {
+        document.write(this.model + ' ' + this.rozdzielczosc)
+    }
+}
+monitor.wyswietl_szymichowski();
+monitor.marka = "ASUS";
+monitor.wypisz = function () {
+    alert("Marka: " + this.marka)
+}
+monitor.wypisz();
+&lt;/script&gt;
+</code>
+    </pre>
+</body>
+
+</html>
